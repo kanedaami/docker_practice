@@ -11,4 +11,5 @@ WORKDIR /app
 
 USER $USERNAME
 COPY app.py .
+COPY check.txt .
 CMD ["python", "app.py"]
