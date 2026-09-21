@@ -3,6 +3,6 @@ import os
 is_flag = os.getenv("FLAG", "false").lower() == "true"
 
 if is_flag:
-    print("フラグついた!")
+    print("フラグついた")
 else:
-    print("フラグ切れた。。")
+    print("フラグ切れた")
