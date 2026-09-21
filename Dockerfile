@@ -1,7 +1,7 @@
 FROM python:3.11-slim 
 WORKDIR /app
 COPY requirements.txt .
-COPY app.py .
 RUN pip install --user -r requirements.txt
+COPY app.py .
 ENV FLAG=true
 CMD ["python", "app.py"]
