@@ -4,8 +4,8 @@ ARG USERNAME=testuser
 ARG UID=1000
 ARG GID=1000
 
-RUN groupadd --gid $USER_GID $USERNAME \
-    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
+RUN groupadd --gid $GID $USERNAME \
+    && useradd --uid $UID --gid $GID -m $USERNAME
 
 WORKDIR /app
 
